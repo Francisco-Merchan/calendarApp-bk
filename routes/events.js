@@ -13,7 +13,7 @@ const { validarCampos } = require("../middlewares/validar-campos");
 const { isDate } = require("../helpers/isDate");
 
 // Todas deben pasar por la validacion de JWT
-// router.use(validarJWT);
+router.use(validarJWT);
 
 // Obtener eventos
 router.get("/", getEventos);
