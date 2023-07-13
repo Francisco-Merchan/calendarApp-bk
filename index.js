@@ -15,11 +15,9 @@ app.use(cors());
 
 // Directorio Publico
 // app.use(express.static("public"));
-app.use(
-  express.static(path.resolve(__dirname + "/public/index.html"), {
-    extensions: ["js"],
-  })
-);
+express.static(path.resolve(__dirname, "frontend", "static"), {
+  extensions: ["js"],
+});
 
 // Lectura y parseo del body
 app.use(express.json());
