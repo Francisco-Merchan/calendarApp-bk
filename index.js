@@ -14,10 +14,7 @@ dbConnection();
 app.use(cors());
 
 // Directorio Publico
-// app.use(express.static("public"));
-express.static(path.resolve(__dirname, "frontend", "static"), {
-  extensions: ["js"],
-});
+app.use(express.static("public"));
 
 // Lectura y parseo del body
 app.use(express.json());
