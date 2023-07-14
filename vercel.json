@@ -14,6 +14,6 @@
     { "handle": "filesystem" },
     { "src": "/api/auth/(.*)", "dest": "/api/auth" },
     { "src": "/api/events/(.*)", "dest": "/api/events" },
-    { "src": "/(.*)", "dest": "/index.html" }
+    { "src": "/(.*)", "dest": "/index.js" }
   ]
 }
