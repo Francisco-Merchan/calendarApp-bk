@@ -16,7 +16,7 @@ app.use(cors());
 
 // Directorio Publico
 // app.use(express.static("public"));
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, "public"), { extensions: ["js"] }));
 
 // Agrega los siguientes encabezados para permitir el uso de módulos JavaScript
 app.use((req, res, next) => {
