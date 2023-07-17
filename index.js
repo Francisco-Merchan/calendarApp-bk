@@ -18,13 +18,6 @@ app.use(cors());
 app.use(express.static("public"));
 // app.use(express.static(path.join(__dirname, "public"), { extensions: ["js"] }));
 
-// Agrega los siguientes encabezados para permitir el uso de módulos JavaScript
-app.use((req, res, next) => {
-  res.setHeader("Content-Type", "text/javascript; charset=UTF-8");
-  res.setHeader("X-Content-Type-Options", "nosniff");
-  next();
-});
-
 // Lectura y parseo del body
 app.use(express.json());
 
